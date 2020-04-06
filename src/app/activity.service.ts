@@ -10,8 +10,8 @@ export class ActivityService {
   
   constructor( private _httpClient:HttpClient) { }
    
-  getActivity(ActivityID: string): Observable<Activity>{
-    return this._httpClient.get<Activity>(API+"/id/" + ActivityID );
+  getActivity(activityID: string): Observable<Activity>{
+    return this._httpClient.get<Activity>(API+"/id/" + activityID );
 
   }
 
